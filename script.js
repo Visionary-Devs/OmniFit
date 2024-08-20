@@ -1,10 +1,25 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission</p>const name = document.getElementById('name').value;
-const email = document.getElementById('email').value;
-const message = document.getElementById('message').value;
+document.addEventListener("DOMContentLoaded", function() {
+    // Smooth Scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
 
-// Simulate sending the message
-alert(`Thank you, ${name}! Your message has been sent.`);
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
-// Clear the form
-document.getElementById('contact-form').reset();
+    // Dynamic CTA Button Animation
+    const ctaButtons = document.querySelectorAll('.cta-button');
+
+    ctaButtons.forEach(button => {
+        button.addEventListener('mouseover', () => {
+            button.classList.add('active');
+        });
+
+        button.addEventListener('mouseout', () => {
+            button.classList.remove('active');
+        });
+    });
+});
