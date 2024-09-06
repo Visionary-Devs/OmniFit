@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Where Faith, Fitness, And Technology Converge",
   "main": "App.js",
-  "devDependencies": {},
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,20 @@
   "bugs": {
     "url": "https://github.com/Visionary-Devs/OmniFit/issues"
   },
-  "homepage": "https://github.com/Visionary-Devs/OmniFit#readme"
+  "homepage": "https://github.com/Visionary-Devs/OmniFit#readme",
+  "dependencies": {
+    
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
