@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/your-repository-name/static/css/main.66309009.css",
-    "main.js": "/your-repository-name/static/js/main.3ee9b7af.js",
-    "index.html": "/your-repository-name/index.html",
-    "main.66309009.css.map": "/your-repository-name/static/css/main.66309009.css.map",
-    "main.3ee9b7af.js.map": "/your-repository-name/static/js/main.3ee9b7af.js.map"
+    "main.css": "/omnifit/static/css/main.66309009.css",
+    "main.js": "/omnifit/static/js/main.3ee9b7af.js",
+    "index.html": "/omnifit/index.html",
+    "main.66309009.css.map": "/omnifit/static/css/main.66309009.css.map",
+    "main.3ee9b7af.js.map": "/omnifit/static/js/main.3ee9b7af.js.map"
   },
   "entrypoints": [
     "static/css/main.66309009.css",
