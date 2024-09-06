@@ -1,269 +1,83 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+p, ul {
+    text-align: center;
     line-height: 1.6;
-    color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Header Styling */
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: white;
+    padding: 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
 }
 
-header .logo img {
-    width: 150px;
-}
-
-header nav ul {
-    list-style: none;
+.nav-links {
     display: flex;
-    gap: 20px;
+    list-style: none;
 }
 
-header nav ul li {
-    display: inline;
+.nav-links li {
+    margin: 0 20px;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cta-button {
-    background: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-left: 20px;
-}
-
-.cta-button.secondary {
-    background: #555;
-}
-
-/* Hero Section Styling */
+/* Hero Section */
 .hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
-    color: #fff;
+    background-color: white;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-}
-
-/* Content Section Styling */
-.content-section {
-    padding: 60px 0;
-    background: #f4f4f4;
-    text-align: center;
-}
-
-.content-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.content-section h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.content-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.content-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Service and Feature Grids */
-.service-grid, .feature-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.service-block, .feature-block {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 45%;
-    margin-bottom: 20px;
-}
-
-.service-block h3, .feature-block h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.service-block p, .feature-block p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Testimonials */
-.testimonials blockquote {
-    font-style: italic;
-    color: #333;
-    margin: 20px auto;
-    padding: 20px;
-    border-left: 5px solid #007BFF;
-    background: #fff;
-    width: 80%;
-}
-
-.testimonials cite {
-    display: block;
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Blog Posts */
-.blog-posts {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.blog-posts .post {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 45%;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.blog-posts .post h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.blog-posts .post p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #666;
-}
-
-.blog-posts .post a {
-    font-size: 1rem;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-/* Call to Action Section */
-.cta-section {
-    background: #007BFF;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.cta-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.cta-section p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-}
-
-/* Contact Section */
-.contact-details {
+.cta-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
     margin-top: 20px;
-    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
 
-.contact-details p {
-    margin-bottom: 10px;
-}
-
-.contact-details .social-media a {
-    color: #007BFF;
-    text-decoration: none;
-    margin-right: 15px;
+.cta-btn:hover {
+    background-color: #333;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: white;
     text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
 }
 
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-.footer-links li {
-    display: inline;
-    margin-right: 15px;
-}
-
-.footer-links li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.newsletter {
-    margin-top: 20px;
-}
-
-.newsletter input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 300px;
-    margin-right: 10px;
-}
-
-.newsletter button {
-    padding: 10px;
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+footer p {
+    font-size: 14px;
+    color: black;
 }
